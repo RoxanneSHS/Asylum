@@ -1,6 +1,3 @@
-// Version 101
-// Released: TBD
-
 BACKUP ~impasylum/backup~
 AUTHOR ~rastor@rpgdungeon.net~
 
@@ -38,8 +35,6 @@ ACTION_IF GAME_IS ~bg2ee eet~ THEN BEGIN
 END 
 
 INCLUDE ~impasylum/lib/potions.tph~
-
-// First, we'll copy over the new items
 
 COPY ~impasylum/items/r#bardsw.itm~ ~override~
  SAY NAME1 @1
@@ -135,8 +130,6 @@ COPY ~impasylum/items/r#know.itm~ ~override~
  SAY NAME2 @51
  SAY DESC @52
 
-// Now to copy over the new creatures
-
 COPY ~impasylum/creatures/r#anast.cre~ ~override~
  SAY NAME1 @53
  SAY NAME2 @53
@@ -192,9 +185,6 @@ COPY ~impasylum/creatures/r#drow.cre~ ~override~
 COPY ~impasylum/creatures/r#troll.cre~ ~override~
  SAY NAME1 @96
  SAY NAME2 @96
-
-
-COMPILE ~impasylum/scripts~
 
 EXTEND_BOTTOM ~dplayer3.bcs~ ~impasylum/appends/r#wedrin.baf~
 
