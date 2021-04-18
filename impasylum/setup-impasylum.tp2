@@ -18,7 +18,7 @@ ALWAYS
 
 END
 
-VERSION ~v200~
+VERSION ~v201~
 
 LANGUAGE ~English~ ~English~ ~impasylum/tra/English/setup.tra~
 LANGUAGE ~French~ ~French~ ~impasylum/tra/English/setup.tra~ ~impasylum/French/setup.tra~
@@ -195,6 +195,8 @@ EXTEND_TOP ~player1d.bcs~ ~impasylum/appends/resting.baf~
 EXTEND_TOP ~ar1514.bcs~ ~impasylum/appends/ar1514.baf~
 
 COMPILE ~impasylum/dialogues~
+COMPILE ~impasylum/scripts~
+COMPILE ~impasylum/pscripts~
 
 COPY ~impasylum/spells~ ~override~
 
